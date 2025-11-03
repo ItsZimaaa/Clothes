@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --mainColor: #232323;
+  --secondaryColor: #f2f0f1;
+  --SecondaryText: #909090;
+}
+
+
+.side {
+  @apply md:px-20 px-5
+}
+
+.Header {
+  @apply md:text-[64px] text-[36px] mt-4 font-extrabold text-(--mainColor) leading-tight;
+}
+
+.h {
+  @apply md:text-[48px] font-bold;
+}
+
+.h2 {
+  @apply md:text-[40px] text-[24px] font-semibold ;
+}
+
+.p {
+  @apply md:text-[16px] text-[14px];
+}
+
+.button {
+  @apply bg-(--mainColor) text-(--secondaryColor) py-3 rounded-full md:w-[200px];
+}
