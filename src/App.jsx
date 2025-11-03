@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
-import Brands from "./Components/Brands";
 import Admin from "./Pages/Admin";
 import Sale from "./Pages/Sale";
 
@@ -15,12 +14,11 @@ export default function App() {
 
         <Routes>
           < Route path="/" element={<Home />} />
-          < Route path="/Admin" element={<Admin/>} />
+          < Route path="/Admin" element={<Admin />} />
+          < Route path="/Sale" element={<Sale />} />
         </Routes>
-        
+
       </BrowserRouter>
-      <Brands />
-      <Sale />
     </main>
   )
 }

@@ -77,7 +77,7 @@ export default function Sale() {
     ]
 
     return (
-        <section>
+        <section className="mt-[17px]">
             <div className="side py-10 flex flex-col gap-10">
                 <h1 className='h'>NEW ARRIVALS</h1>
 
