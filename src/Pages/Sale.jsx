@@ -7,6 +7,8 @@ import Product6 from "../assets/product6.png";
 import Product7 from "../assets/product7.png";
 import Product8 from "../assets/product8.png";
 
+import img3 from "../assets/img3.png";
+
 export default function Sale() {
 
     const Products = [
@@ -76,6 +78,14 @@ export default function Sale() {
         },
     ]
 
+    function Update() {
+        const updatedItem =
+        Products.slice(4, 8);
+        Products.push(updatedItem);
+    }
+
+    
+
     return (
         <section className="mt-[17px]">
             <div className="side py-10 flex flex-col gap-10">
@@ -114,7 +124,7 @@ export default function Sale() {
 
                 <div className="grid md:grid-cols-4 grid-cols-2 gap-6 justify-center">
                     {
-                        Products.slice(4, 8).map((item) => (
+                        Products.slice(4, 9).map((item) => (
                             <div key={item.id} className="w-full ">
                                 <img src={item.img} alt={item.name} className="w-[300px] h-[300px] object-cover rounded-3xl" />
                                 <h2 className='text-[20px] font-bold'>{item.name}</h2>
